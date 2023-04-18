@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import StoreKit
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!\nBluetooth CHECKING")
