@@ -10,8 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!\nBluetooth CHECKING")
+            .padding().accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .alignmentGuide(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Guide@*/.top/*@END_MENU_TOKEN@*/) {
+                dimension in
+                89
+            }
             .padding()
+            .accessibilityHint("it is for demo purpose")
+            .fixedSize()
+            
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreBluetooth
+
 @main
 struct BluetoothisopenornotApp: App {
     var body: some Scene {
@@ -14,6 +15,8 @@ struct BluetoothisopenornotApp: App {
             ContentView()
             if CBCentralManager().state == .poweredOn {
                 // Bluetooth is enabled
+                
+                
             } else {
                 // Bluetooth is not enabled
             }
