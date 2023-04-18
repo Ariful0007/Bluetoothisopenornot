@@ -10,7 +10,9 @@ import StoreKit
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!\nBluetooth CHECKING")
-            .padding().accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .multilineTextAlignment(.center)
+            .accessibilityAddTraits([.isHeader, .isModal])
+            .padding().accentColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             .alignmentGuide(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Guide@*/.top/*@END_MENU_TOKEN@*/) {
                 dimension in
@@ -19,6 +21,7 @@ struct ContentView: View {
             .padding()
             .accessibilityHint("it is for demo purpose")
             .fixedSize()
+            
             
         
     }
